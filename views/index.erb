@@ -1,0 +1,30 @@
+<!-- .hero
+  .hero-inner
+    %a.hero-logo{:href => ""}
+      %img{:src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png", :alt=>"Logo Image"}
+      .hero-copy
+        %h1= @product
+        %p
+          A few reasons why this product is worth using, who it's for, and why they need it.
+    %button
+      Learn More
+ -->
+
+<link href="css/main.css" rel="stylesheet" type="text/css">
+ 
+
+<body>
+
+<h1>HAGGERTY'S</h1>
+<!-- <h3><%= @loctime %></h3> -->
+
+	<h2><span style="color: white;">Max. Wave Height : </span><%= @swell %>ft.</h2>
+	<h2><span style="color: white;">Min. Wave Height : </span><%= @swell1 %>ft.</h2>
+	<h3><span style="color: white;">High Tide : </span><%= @tide %>ft. at </h3>
+	<h3><span style="color: white;">Low Tide : </span><%= @tidelo %>ft. at <%= @tidehour %>:<%= @tidemin %></h3>
+	<!-- <h3><span style="color: white;">Low Tide : </span><%= @temp %> at <%= @tidehour %>:<%= @tidemin %></h3> -->
+	<h3><span style="color: white;">Wind Direction : </span><%= @wind %></h3>
+	<h3><span style="color: white;">Air Temperature : </span><%= @temp %>˚</h3>
+	<!-- <P><%= @resp1 %></p> -->
+
+</body>
